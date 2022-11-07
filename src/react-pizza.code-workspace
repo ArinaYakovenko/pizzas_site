@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "react-pizza",
+			"path": ".."
+		},
+		{
+			"name": "react-pizza-html",
+			"path": "../../react-pizza-html"
+		}
+	],
+	"settings": {}
+}
