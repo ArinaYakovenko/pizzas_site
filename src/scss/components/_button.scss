@@ -1,7 +1,8 @@
 @import '../variables';
 
 .button {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   background-color: $orange;
   border-radius: 30px;
   padding: 10px 20px;
