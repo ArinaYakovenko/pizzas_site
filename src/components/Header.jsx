@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 import Search from './Search';
 
 export default function Header() {
-  //get all variable from initialState
-  const { totalPrice, items } = useSelector(state => state.cart); 
+  const { totalPrice, items } = useSelector(state => state.cart);
+  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
 
   return (
     <div className="header">
@@ -55,7 +55,7 @@ export default function Header() {
                 strokeLinejoin="round"
               />
             </svg>
-            <span>{items.length}</span>
+            <span>{totalCount}</span>
           </Link>
         </div>
       </div>
